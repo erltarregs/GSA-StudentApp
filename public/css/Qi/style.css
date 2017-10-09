@@ -1,0 +1,232 @@
+* {
+	/*border: 1px dotted #020;*/
+}
+body {
+	margin: 0;
+	font-family: 'Roboto', 'calibri', arial;
+	font-size: 16px;
+}
+
+.site{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+		"na"
+		"ca"
+		"fa"
+	;
+}
+
+.container{
+	margin: auto;
+	width: 90%;
+}
+
+.nav-area{
+	grid-area: na;
+	/*border: 1px dashed blue;*/
+	/*min-height: 54px;*/
+	border-bottom: 2px solid #dfdfdf;
+	box-shadow: #dfdfdf 2px 2px 2px;
+}
+
+.content-area{
+	grid-area: ca;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 300px;
+}
+
+.footer-area{
+	grid-area: fa;
+}
+
+footer{
+	display: block;
+	min-height: 100px;
+	background-color: #000;
+	color: #d7d7d7;
+	text-align: center;
+}
+#desktop-nav{
+	display: none;
+}
+#mobilenav-cont{
+	display: block;
+    padding: 5px 5%;
+	color: #d7d7d7;
+}
+.burger-right{
+	text-align: end;
+}
+.burger-left{
+	text-align: start;
+}
+
+.overlay{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(10,10,10,0.87);
+	overflow-x: hidden;
+	transition: 0.4s;
+}
+
+#close-bttn{
+	width: 69px;
+    position: absolute;
+    top: -4px;
+    right: 3%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.mobilenav-items{
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	/*transition: 0.5s;*/
+}
+
+.overlay a {
+	display: block;
+	color: #d7d7d7;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.overlay a:hover, .overlay a:focus{
+	color: #f9f9f9;
+}
+
+.navicon-cont{
+/*	position: absolute;
+	top: 10px;
+	right: 10px;*/
+	cursor: pointer;
+	display: inline-block;
+/*	font-size:26px;
+	padding: 3px 11px;*/
+    font-size: 23px;
+    padding: 3px 10px;
+	border: 2px solid #aaa;
+	border-radius: 3px;
+	text-align: center;
+}
+.navicon-cont span{
+	color: #aaa;
+}
+
+
+
+
+/*--------------- TABLE STYLES --------------*/
+table{
+	display: block;
+	border-spacing: 0;
+	border-collapse: collapse;
+	background-color: transparent;
+	overflow-x: overlay;
+}
+table tr{
+	padding: 3px;
+}
+
+table tr td{
+	padding: 5px;
+}
+
+.table>caption+thead>tr:first-child>th{
+	border-bottom: 2px solid rgb(51,51,51);
+}
+
+.table-hover>tbody>tr:hover{
+	background-color: #eee;
+	/*cursor: pointer;*/
+	color: #2244ff;
+}
+
+table tbody>tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+table tbody>tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+tbody tr td a{
+	color: initial;
+	display: block;
+	text-decoration: none;
+}
+/*---------------/ TABLE STYLES end--------------*/
+
+form a.bttn {
+
+}
+
+input:focus{
+	outline-color: #87ceeb;
+}
+a.bttn,
+input[type=submit]{
+	font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.bttn {
+	color: initial;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 3px;
+	border-top: 2px solid #CCCCCC;
+	border-right: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	border-left: 2px solid #CCCCCC;
+}
+
+input[type=submit] {
+	background: transparent;
+	padding: 3px;
+	border-top: 2px solid #CCCCCC;
+	border-right: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	border-left: 2px solid #CCCCCC;
+}
+
+input[type=submit]:hover{
+	cursor: pointer;
+}
+/*a.bttn {
+    background: transparent;
+    color: initial;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 1px;
+    display: inline-block;
+    box-shadow: 3px 2px 4px #ccc;
+}*/
+
+label, 
+input[type=text] {
+    display: inline-block;
+}
+input[type=text]{
+	padding: 8px;
+    margin-bottom: 8px;
+}
+label{
+	padding: 8px 0;
+    margin-bottom: 8px;
+}
+
+
+
+.footer-content{
+	margin: 40px auto 40px;
+}

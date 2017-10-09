@@ -1,0 +1,4 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('{{ public_path('fonts/Qi/Roboto/Roboto-Regular.ttf') }}');
+}
