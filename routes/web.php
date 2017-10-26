@@ -12,6 +12,11 @@
 */
 
 Route::get('/', 'PagesController@getIndex')->name('homepage');
+Route::get('about', 'PagesController@getAbout')->name('about');
+Route::get('contact', 'PagesController@getContact')->name('contact');
+Route::get('frequently-asked-questions', 'PagesController@getFAQ')->name('FAQ');
+
+
 Route::resource('students', 'StudentController');
 //Route::get('student', 'StudentController@index')->name('studentapp');
 Route::get('students/create', 'StudentController@create')->name('students.create');
@@ -20,6 +25,3 @@ Route::get('students/{$id}', 'StudentController@show')->name('students.show');
 Route::post('students/{$id}', 'StudentController@destroy')->name('students.destroy');
 Route::get('students/{$id}/edit', 'StudentController@edit')->name('students.edit');
 
-Route::get('about', 'PagesController@getAbout')->name('about');
-Route::get('contact', 'PagesController@getContact')->name('contact');
-Route::get('frequently-asked-questions', 'PagesController@getFAQ')->name('FAQ');

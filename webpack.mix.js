@@ -15,7 +15,7 @@ let mix = require('laravel-mix');
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
 mix.styles([
-    'public/css/Qi/fonts.css',
-    'public/css/Qi/style.css',
-    'public/css/Qi/responsive.css'],
+    'public/css/aiwops/fonts.css',
+    'public/css/aiwops/style.css',
+    'public/css/aiwops/responsive.css'],
      'public/css/all.css');

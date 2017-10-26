@@ -17,4 +17,18 @@ class Student extends Model
     ];
     public $timestamps = false;
 //    protected $dates = ['deleted_at'];
+/*    public $StudentFields = [
+    	'forms' => [
+	    	'first_name'=>'',
+	    	'middle_name'=>'',
+	    	'last_name'=>'',
+	    	'address'=>'',
+	    	'birthday'=>'',
+	    	'email_address'=>'',
+	    ],
+	    'formAttributes' => [
+	    	'' => '',
+	    ],
+
+    ];*/
 }

@@ -9,18 +9,31 @@ $nav_items = [
 $navitem_count = count($nav_items);
 $navitem_width = 100/$navitem_count;
 
+
+
+
 /*
 |	This is the area that receives the input from the user on where to
 |	position the hamburger menu on mobile.
 */
-// $burger_position on line 18 will be commented out in the future as the same variable
-// on line 19 will be supplemented from the value in the logged-in user's config settings.
+// $burger_position on line 21 will be commented out in the future as the same variable
+// on line 22 will be supplemented from the value in the logged-in user's config settings.
 $burger_position = "right";
 $burger_class = "burger-".$burger_position;
 //$slide_direction_choice = "right";
-?>
 
-<div class="nav-area">
+
+
+
+//*** TO-DO later: Initiative to make the nav items' width relative to their word lengths
+//***
+//*** try to use strlen($nav_items) to measure each item's length,
+//*** then pass these values to an array with each corresponding nav_item assignment.
+//*** find a way to calculate their proportions with each other.
+//*** finally, pass those values to CSS as grid-template-columns values, making sure to consider adding some allowance for the spacings between each item(?).
+
+
+?>
 
 <!-- MOBILE MENU -->
 <nav id="mobilenav-cont">
@@ -50,7 +63,6 @@ $burger_class = "burger-".$burger_position;
 </div>
 </nav>
 
-</div>
 
 <script type="text/javascript">
 	function showNavItems(){

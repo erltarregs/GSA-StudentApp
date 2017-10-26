@@ -133,6 +133,11 @@ table{
 	background-color: transparent;
 	overflow-x: overlay;
 }
+
+table.table.table-hover {
+    max-height: 468px;
+}
+
 table tr{
 	padding: 3px;
 }
@@ -172,12 +177,6 @@ form a.bttn {
 input:focus{
 	outline-color: #87ceeb;
 }
-a.bttn,
-input[type=submit]{
-	font-size: 16px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
 .bttn {
 	color: initial;
 	text-decoration: none;
@@ -189,7 +188,7 @@ input[type=submit]{
 	border-left: 2px solid #CCCCCC;
 }
 
-input[type=submit] {
+input[type=submit]{
 	background: transparent;
 	padding: 3px;
 	border-top: 2px solid #CCCCCC;
@@ -198,8 +197,22 @@ input[type=submit] {
 	border-left: 2px solid #CCCCCC;
 }
 
-input[type=submit]:hover{
+a.bttn,
+input[type=submit]{
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 17px;
+    padding: 5px 20px;
+    border-color: aliceblue;
+    background-color: paleturquoise;
+}
+
+
+a.bttn:hover, input[type=submit]:hover{
 	cursor: pointer;
+	background-color: turquoise;
+	color: #f8f8ff; /*ghostwhite*/
 }
 /*a.bttn {
     background: transparent;
@@ -216,9 +229,13 @@ label,
 input[type=text] {
     display: inline-block;
 }
-input[type=text]{
-	padding: 8px;
+input[type=text], 
+input[type=date],
+input[type=number],
+input[type=email] {
+	padding: 5px;
     margin-bottom: 8px;
+    border-radius: 4px;
 }
 label{
 	padding: 8px 0;

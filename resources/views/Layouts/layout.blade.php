@@ -9,12 +9,15 @@
 </head>
 <body>
 <div class="site">
-	@include('layouts.navigation')
-<div class="content-area">
-	@include('layouts.page-content')
+	<div class="nav-area">
+		@include('layouts.navigation')
+	</div>
+	<div class="content-area">
+		@include('layouts.page-content')
+	</div>
+	<footer class="footer-area">
+		@include('layouts.page-footer')
+	</footer>
 </div>
-<footer class="footer-area">
-	@include('layouts.page-footer')
-</footer>
 </body>
 </html>
